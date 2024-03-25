@@ -14,9 +14,9 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+  describe('GET /api', () => {
+    it('should return "Welcome to nest/jsx-crud app"', () => {
+      expect(appController.welcome()).toBe('Welcome to nest/jsx-crud app');
     });
   });
 });
